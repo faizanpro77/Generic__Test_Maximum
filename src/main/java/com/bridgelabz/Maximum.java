@@ -1,30 +1,19 @@
 package com.bridgelabz;
 
-public class Maximum {
-    //To find maximum value
-    public Integer MaximumInteger(Integer num1, Integer num2, Integer num3) {
-        Integer maximumValue;
-        if(num1.compareTo(num2) > 0)
-            maximumValue = num1;
-        else
-            maximumValue = num2;
+public class Maximum  {
 
-        if (maximumValue.compareTo(num3) > 0)
+    //To find maximum value
+    public static <E extends Comparable>E findMaximum(E value1, E value2, E value3) {
+        E maximumValue;
+        if(value1.compareTo(value2) > 0)
+            maximumValue = value1;
+        else
+            maximumValue = value2;
+
+        if (maximumValue.compareTo(value3) > 0)
             return maximumValue;
         else
-            return num3;
+            return value3;
     }
-    //To find maximum value
-    public Float MaximumFloat(Float num1, Float num2, Float num3) {
-        Float maximumValue;
-        if(num1.compareTo(num2) > 0)
-            maximumValue = num1;
-        else
-            maximumValue = num2;
-
-        if (maximumValue.compareTo(num3) > 0)
-            return maximumValue;
-        else
-            return num3;
-    }
+   
 }
