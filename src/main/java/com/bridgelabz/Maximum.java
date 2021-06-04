@@ -27,4 +27,21 @@ public class Maximum {
         else
             return num3;
     }
+
+    public String MaximumString(String apple, String peach, String banana) {
+        String maximumValue;
+        if(apple.compareTo(peach) > 0)
+            maximumValue = apple;
+        else
+            maximumValue = peach;
+
+        if (maximumValue.compareTo(banana) > 0)
+            return maximumValue;
+        else
+            return banana;
+    }
+
+    public static void main(String[] args){
+        System.out.println("Welcome to generic problem");
+    }
 }
