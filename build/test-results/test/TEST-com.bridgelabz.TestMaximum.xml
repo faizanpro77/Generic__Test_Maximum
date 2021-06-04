@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.TestMaximum" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-06-04T13:36:04" hostname="DESKTOP-I19OHT9" time="0.004">
+<testsuite name="com.bridgelabz.TestMaximum" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-06-04T14:02:26" hostname="DESKTOP-I19OHT9" time="0.014">
   <properties/>
-  <testcase name="givenInteger_whenFindMaximumAtPosition1_returnMaximum" classname="com.bridgelabz.TestMaximum" time="0.002"/>
+  <testcase name="givenFloat_whenFindMaximumAtPosition1_returnMaximum" classname="com.bridgelabz.TestMaximum" time="0.004"/>
+  <testcase name="givenInteger_whenFindMaximumAtPosition1_returnMaximum" classname="com.bridgelabz.TestMaximum" time="0.001"/>
+  <testcase name="givenFloat_whenFindMaximumAtPosition2_returnMaximum" classname="com.bridgelabz.TestMaximum" time="0.001"/>
   <testcase name="givenInteger_whenFindMaximumAtPosition2_returnMaximum" classname="com.bridgelabz.TestMaximum" time="0.0"/>
-  <testcase name="givenInteger_whenFindMaximumAtPosition3_returnMaximum" classname="com.bridgelabz.TestMaximum" time="0.001"/>
+  <testcase name="givenFloat_whenFindMaximumAtPosition3_returnMaximum" classname="com.bridgelabz.TestMaximum" time="0.001"/>
+  <testcase name="givenInteger_whenFindMaximumAtPosition3_returnMaximum" classname="com.bridgelabz.TestMaximum" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
