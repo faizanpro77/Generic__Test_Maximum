@@ -1,31 +1,31 @@
 package com.bridgelabz;
 
-public class Maximum<E extends Comparable> {
-    E value1;
-    E value2;
-    E value3;
+    class MaximumElement <E extends Comparable<E>> {
+    E[] values;
 
-    public Maximum(E value1, E value2, E value3) {
-        this.value1 = value1;
-        this.value2 = value2;
-        this.value3 = value3;
+    public static <E> void printMaximum(E maximum){
+        System.out.println("Maximum:" + maximum);
     }
 
-    //To find maximum value
-    public static <E extends Comparable>E findMaximum(E value1, E value2, E value3) {
-        E maximumValue;
-        if(value1.compareTo(value2) > 0)
-            maximumValue = value1;
-        else
-            maximumValue = value2;
-
-        if (maximumValue.compareTo(value3) > 0)
-            return maximumValue;
-        else
-            return value3;
+    @SafeVarargs
+    public MaximumElement(E... values){
+        this.values = values;
     }
 
-    public static void main(String[] args){
-        System.out.println("Welcome to generic problem");
+    public static <E extends Comparable<E>> E max(E... values) {
+        E maximum = values[0];
+        for (int i = 1; i < values.length; i++)
+        {
+            if(maximum.compareTo(values[i]) < 0) {
+                maximum = values[i];
+            }
+        }
+        return maximum;
+    }
+
+    public E findMaximum() {
+        E maximum = max(values);
+        printMaximum(maximum);
+        return maximum;
     }
 }
